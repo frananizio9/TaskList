@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas - Prática Gitflow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>TaskList</h1>
+            <p class="subtitle">Organize suas atividades diárias</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="task-form-section" aria-labelledby="form-heading">
+            <h2 id="form-heading" class="visually-hidden">Adicionar nova tarefa</h2>
+            <form class="task-form" action="#" method="post">
+                <label for="new-task" class="visually-hidden">Descrição da tarefa</label>
+                <input 
+                    type="text" 
+                    id="new-task" 
+                    name="task" 
+                    placeholder="Digite uma nova tarefa..." 
+                    required
+                >
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+
+        <section class="task-list-section" aria-labelledby="list-heading">
+            <h2 id="list-heading">Minhas Tarefas</h2>
+            <ul class="task-list">
+                <li class="task-item completed">
+                    <div class="task-content">
+                        <input type="checkbox" id="task-1" checked>
+                        <label for="task-1">Configurar repositório e branch develop</label>
+                    </div>
+                    <span class="task-status">Concluída</span>
+                </li>
+
+                <li class="task-item">
+                    <div class="task-content">
+                        <input type="checkbox" id="task-2">
+                        <label for="task-2">Criar estrutura inicial HTML e CSS</label>
+                    </div>
+                    <span class="task-status">Pendente</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Prática 1: Gitflow &bull; Engenharia de Software</p>
+        </div>
+    </footer>
+</body>
+</html>
